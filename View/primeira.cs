@@ -53,7 +53,7 @@ namespace rocketpowers
         private void btnEnter_Click(object sender, EventArgs e)
         {
             Controle controle = new Controle();
-            controle.acessar(txtLogin.Text, TxtSenha.Text);
+            controle.acessar(txtlogin.Text, txtsenha.Text);
             if (controle.mensagem.Equals(""))
             {
                 if (controle.tem)
@@ -63,14 +63,23 @@ namespace rocketpowers
                     View.Form3 well = new View.Form3();
                     well.Show();
                 }
+
+
+
                 else
                 {
 
                     MessageBox.Show("login not found, check the login and password inserted", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-            }else
+            }
+            else
             {
                 MessageBox.Show(controle.mensagem);
+
+                {
+
+                }
+
             }
         }
     }

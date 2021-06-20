@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace rocketpowers.Dal
 {
-    class Conexao
+   public class Conexao
     {
 
         SqlConnection con = new SqlConnection();

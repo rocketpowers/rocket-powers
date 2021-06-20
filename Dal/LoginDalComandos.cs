@@ -18,7 +18,7 @@ namespace rocketpowers.Dal
 
         public bool verificarLogin(String login, String senha)
         {
-            cmd.CommandText = "select * from logins where email=@login and senha= @senha";
+            cmd.CommandText = "SELECT * FROM logins WHERE email = @login and senha = @senha";
             cmd.Parameters.AddWithValue("@login", login);
             cmd.Parameters.AddWithValue("@senha", senha);
 
@@ -32,8 +32,7 @@ namespace rocketpowers.Dal
                     tem = true;
                 }
             }
-            //con.desconectar();
-            //dr.Close();
+            
             catch (SqlException)
             {
 
@@ -58,13 +57,13 @@ namespace rocketpowers.Dal
                     cmd.Connection = con.conectar();
                     cmd.ExecuteNonQuery();
                     con.desconectar();
-                    this.mensagem = "resgistered successfully";
+                    this.mensagem = "Resgistered successfully";
                     tem = true;
 
                 }
                 catch (SqlException)
                 {
-                    this.mensagem = "error with bank";
+                    this.mensagem = "Error with bank";
                 }
             }
             else

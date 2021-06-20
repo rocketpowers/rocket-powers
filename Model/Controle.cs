@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace rocketpowers.Model
 {
-    class Controle
+   public class Controle
     {
 
         public bool tem;
         public String mensagem = "";
-        public bool acessar(String Login, String senha)
+        public bool acessar(String login, String senha)
         {
             LoginDalComandos LoginDal = new LoginDalComandos();
-            tem = LoginDal.verificarLogin(Login, senha);
-            if (!LoginDal.mensagem.Equals(""))
+            tem = LoginDal.verificarLogin(login, senha);
+            if (!LoginDal.mensagem.Equals("")) 
             {
 
                 this.mensagem = LoginDal.mensagem;

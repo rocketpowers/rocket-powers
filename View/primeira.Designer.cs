@@ -31,11 +31,11 @@ namespace rocketpowers
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.painelCentral = new System.Windows.Forms.Panel();
-            this.btnEnter = new System.Windows.Forms.Button();
-            this.txtLogin = new System.Windows.Forms.TextBox();
+            this.botaoEnter = new System.Windows.Forms.Button();
+            this.txtlogin = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
             this.btnCad = new System.Windows.Forms.Button();
-            this.TxtSenha = new System.Windows.Forms.TextBox();
+            this.txtsenha = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.painelCentral.SuspendLayout();
@@ -47,11 +47,11 @@ namespace rocketpowers
             this.painelCentral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("painelCentral.BackgroundImage")));
             this.painelCentral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.painelCentral.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.painelCentral.Controls.Add(this.btnEnter);
-            this.painelCentral.Controls.Add(this.txtLogin);
+            this.painelCentral.Controls.Add(this.botaoEnter);
+            this.painelCentral.Controls.Add(this.txtlogin);
             this.painelCentral.Controls.Add(this.btnSair);
             this.painelCentral.Controls.Add(this.btnCad);
-            this.painelCentral.Controls.Add(this.TxtSenha);
+            this.painelCentral.Controls.Add(this.txtsenha);
             this.painelCentral.Controls.Add(this.label2);
             this.painelCentral.Controls.Add(this.label1);
             this.painelCentral.Font = new System.Drawing.Font("Arial", 11F);
@@ -61,23 +61,24 @@ namespace rocketpowers
             this.painelCentral.TabIndex = 0;
             this.painelCentral.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // btnEnter
+            // botaoEnter
             // 
-            this.btnEnter.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEnter.Location = new System.Drawing.Point(18, 137);
-            this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(214, 24);
-            this.btnEnter.TabIndex = 0;
-            this.btnEnter.Text = "Enter";
-            this.btnEnter.UseVisualStyleBackColor = false;
-            this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            this.botaoEnter.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.botaoEnter.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.botaoEnter.Location = new System.Drawing.Point(18, 137);
+            this.botaoEnter.Name = "botaoEnter";
+            this.botaoEnter.Size = new System.Drawing.Size(214, 24);
+            this.botaoEnter.TabIndex = 0;
+            this.botaoEnter.Text = "Enter";
+            this.botaoEnter.UseVisualStyleBackColor = false;
+            this.botaoEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
-            // txtLogin
+            // txtlogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(18, 39);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(215, 24);
-            this.txtLogin.TabIndex = 3;
+            this.txtlogin.Location = new System.Drawing.Point(18, 39);
+            this.txtlogin.Name = "txtlogin";
+            this.txtlogin.Size = new System.Drawing.Size(215, 24);
+            this.txtlogin.TabIndex = 3;
             // 
             // btnSair
             // 
@@ -101,13 +102,13 @@ namespace rocketpowers
             this.btnCad.UseVisualStyleBackColor = false;
             this.btnCad.Click += new System.EventHandler(this.btnCad_Click);
             // 
-            // TxtSenha
+            // txtsenha
             // 
-            this.TxtSenha.Location = new System.Drawing.Point(18, 98);
-            this.TxtSenha.Name = "TxtSenha";
-            this.TxtSenha.PasswordChar = '#';
-            this.TxtSenha.Size = new System.Drawing.Size(215, 24);
-            this.TxtSenha.TabIndex = 4;
+            this.txtsenha.Location = new System.Drawing.Point(18, 98);
+            this.txtsenha.Name = "txtsenha";
+            this.txtsenha.PasswordChar = '#';
+            this.txtsenha.Size = new System.Drawing.Size(215, 24);
+            this.txtsenha.TabIndex = 4;
             // 
             // label2
             // 
@@ -151,14 +152,14 @@ namespace rocketpowers
         #endregion
 
         private System.Windows.Forms.Panel painelCentral;
-        private System.Windows.Forms.TextBox TxtSenha;
-        private System.Windows.Forms.TextBox txtLogin;
+        private System.Windows.Forms.TextBox txtsenha;
+        private System.Windows.Forms.TextBox txtlogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnEnter;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnCad;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button botaoEnter;
     }
 }
 
