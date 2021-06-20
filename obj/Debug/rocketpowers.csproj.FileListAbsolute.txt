@@ -1,0 +1,12 @@
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\rocketpowers.exe.config
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\rocketpowers.exe
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\rocketpowers.pdb
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.csproj.AssemblyReference.cache
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.Properties.Resources.resources
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.csproj.GenerateResource.cache
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.csproj.CoreCompileInputs.cache
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.exe
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.pdb
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.view.Cadastro.resources
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.Form1.resources
+C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.View.Form3.resources
