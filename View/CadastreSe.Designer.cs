@@ -54,7 +54,7 @@ namespace rocketpowers.view
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnCad);
-            this.panel1.Location = new System.Drawing.Point(572, 201);
+            this.panel1.Location = new System.Drawing.Point(550, 201);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(262, 289);
             this.panel1.TabIndex = 1;
@@ -135,10 +135,12 @@ namespace rocketpowers.view
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1083, 590);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Cadastro";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cadastro";
+            this.Text = "Register";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Cadastro_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

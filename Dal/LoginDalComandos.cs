@@ -7,70 +7,72 @@ using System.Threading.Tasks;
 
 namespace rocketpowers.Dal
 {
-    class LoginDalComandos
-    {
+class LoginDalComandos
+{
+public bool tem = false;
 
-        public bool tem = false;
-        public String mensagem = "";
-        SqlCommand cmd = new SqlCommand();
-        Conexao con = new Conexao();
-        SqlDataReader dr;
+public String mensagem = "";
 
-        public bool verificarLogin(String login, String senha)
-        {
-            cmd.CommandText = "SELECT * FROM logins WHERE email = @login and senha = @senha";
-            cmd.Parameters.AddWithValue("@login", login);
-            cmd.Parameters.AddWithValue("@senha", senha);
+SqlCommand cmd = new SqlCommand();
 
+Conexao con = new Conexao();
 
-            try
-            {
-                cmd.Connection = con.conectar();
-                dr = cmd.ExecuteReader();
-                if (dr.HasRows)
-                {
-                    tem = true;
-                }
-            }
-            
-            catch (SqlException)
-            {
+SqlDataReader dr;
+public bool verificarLogin(String login, String senha)
+{
+cmd.CommandText = "SELECT * FROM logins WHERE email = @login and senha = @senha";
+cmd.Parameters.AddWithValue("@login", login);
+cmd.Parameters.AddWithValue("@senha", senha);
 
-                this.mensagem = "erro com o banco";
-            }
+try
+{
+cmd.Connection = con.conectar();
 
-            return tem;
+dr = cmd.ExecuteReader();
 
-        }
+if (dr.HasRows)
+{
+tem = true;
+}
+}
+catch (SqlException)
+{
+this.mensagem = "erro com o banco";
+}
+return tem;
+}
+public String cadastrar(String email, String senha, String confSenha)
+{
+tem = false;
 
-        public String cadastrar(String email, String senha, String confSenha)
-        {
-            tem = false;
-            if (senha.Equals(confSenha)  ) 
-            {
-                cmd.CommandText = "insert into logins values(@log, @passw);";
-                cmd.Parameters.AddWithValue("@log", email);
-                cmd.Parameters.AddWithValue("@passw", senha);
+if (senha.Equals(confSenha)) 
+{
+cmd.CommandText = "insert into logins values(@log, @passw);";
+cmd.Parameters.AddWithValue("@log", email);
+cmd.Parameters.AddWithValue("@passw", senha);
 
-                try
-                {
-                    cmd.Connection = con.conectar();
-                    cmd.ExecuteNonQuery();
-                    con.desconectar();
-                    this.mensagem = "Resgistered successfully";
-                    tem = true;
+try
+{
+cmd.Connection = con.conectar();
 
-                }
-                catch (SqlException)
-                {
-                    this.mensagem = "Error with bank";
-                }
-            }
-            else
-            {
-                this.mensagem = "credentials invalids";
-            }
-            return mensagem;
+cmd.ExecuteNonQuery();
+
+con.desconectar();
+
+this.mensagem = "Resgistered successfully";
+
+tem = true;
+}
+catch (SqlException)
+{
+ this.mensagem = "Error with bank";
+}
+}
+else
+{
+this.mensagem = "credentials invalids";
+}
+return mensagem;
 
 
         }
