@@ -35,6 +35,8 @@ namespace rocketpowers.View
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnupdate = new System.Windows.Forms.Button();
             this.btnclear = new System.Windows.Forms.Button();
             this.btnexibir = new System.Windows.Forms.Button();
             this.btnnovo = new System.Windows.Forms.Button();
@@ -50,6 +52,8 @@ namespace rocketpowers.View
             this.txtcategory = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.datagrid = new System.Windows.Forms.DataGridView();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.Form4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
@@ -115,6 +119,8 @@ namespace rocketpowers.View
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnupdate);
             this.panel2.Controls.Add(this.btnclear);
             this.panel2.Controls.Add(this.btnexibir);
             this.panel2.Controls.Add(this.btnnovo);
@@ -125,13 +131,34 @@ namespace rocketpowers.View
             this.panel2.Size = new System.Drawing.Size(1035, 43);
             this.panel2.TabIndex = 18;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(863, 11);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "PRINT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnupdate
+            // 
+            this.btnupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnupdate.Location = new System.Drawing.Point(745, 10);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 6;
+            this.btnupdate.Text = "UPDATE";
+            this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
+            // 
             // btnclear
             // 
             this.btnclear.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnclear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnclear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnclear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclear.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclear.Location = new System.Drawing.Point(717, 11);
+            this.btnclear.Location = new System.Drawing.Point(623, 11);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(75, 23);
             this.btnclear.TabIndex = 5;
@@ -143,9 +170,9 @@ namespace rocketpowers.View
             // 
             this.btnexibir.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnexibir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnexibir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnexibir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexibir.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexibir.Location = new System.Drawing.Point(585, 11);
+            this.btnexibir.Location = new System.Drawing.Point(486, 11);
             this.btnexibir.Name = "btnexibir";
             this.btnexibir.Size = new System.Drawing.Size(75, 23);
             this.btnexibir.TabIndex = 4;
@@ -157,9 +184,9 @@ namespace rocketpowers.View
             // 
             this.btnnovo.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnnovo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnnovo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnnovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnovo.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnovo.Location = new System.Drawing.Point(140, 11);
+            this.btnnovo.Location = new System.Drawing.Point(62, 11);
             this.btnnovo.Name = "btnnovo";
             this.btnnovo.Size = new System.Drawing.Size(75, 23);
             this.btnnovo.TabIndex = 1;
@@ -171,13 +198,13 @@ namespace rocketpowers.View
             // 
             this.btnconsultar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnconsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnconsultar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnconsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconsultar.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconsultar.Location = new System.Drawing.Point(291, 11);
+            this.btnconsultar.Location = new System.Drawing.Point(206, 11);
             this.btnconsultar.Name = "btnconsultar";
             this.btnconsultar.Size = new System.Drawing.Size(75, 23);
             this.btnconsultar.TabIndex = 2;
-            this.btnconsultar.Text = "EDIT";
+            this.btnconsultar.Text = "CONSULT";
             this.btnconsultar.UseVisualStyleBackColor = false;
             this.btnconsultar.Click += new System.EventHandler(this.btnconsultar_Click);
             // 
@@ -185,9 +212,9 @@ namespace rocketpowers.View
             // 
             this.btnexcluir.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnexcluir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnexcluir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnexcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexcluir.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexcluir.Location = new System.Drawing.Point(433, 11);
+            this.btnexcluir.Location = new System.Drawing.Point(342, 11);
             this.btnexcluir.Name = "btnexcluir";
             this.btnexcluir.Size = new System.Drawing.Size(75, 23);
             this.btnexcluir.TabIndex = 3;
@@ -285,6 +312,16 @@ namespace rocketpowers.View
             this.datagrid.Size = new System.Drawing.Size(653, 446);
             this.datagrid.TabIndex = 0;
             // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -329,5 +366,9 @@ namespace rocketpowers.View
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.Button btnclear;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

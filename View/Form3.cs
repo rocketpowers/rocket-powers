@@ -172,5 +172,53 @@ namespace rocketpowers.View
             txtbrand.Text = string.Empty;
             txtprice.Text = string.Empty;
         }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Server = myServerAddress; Database = myDataBase; Uid = myUsername; Pwd = myPassword
+                conexao = new MySqlConnection(" Server = localhost; Database = estoque; Uid = root; Pwd = ;");
+
+                strSQL = "UPDATE  produtos SET Nome=@Nome, Categoria=@Categoria, Estoque=@Estoque, Marca=@Marca, Preco=@Preco WHERE ID=@id";
+
+                comando = new MySqlCommand(strSQL, conexao);
+
+                comando.Parameters.AddWithValue("@id", txtid.Text);
+                comando.Parameters.AddWithValue("@Nome", txtname.Text);
+                comando.Parameters.AddWithValue("@Categoria", txtcategory.Text);
+                comando.Parameters.AddWithValue("@Estoque", txtstock.Text);
+                comando.Parameters.AddWithValue("@Marca", txtbrand.Text);
+                comando.Parameters.AddWithValue("@Preco", txtprice.Text);
+
+                conexao.Open();
+
+                comando.ExecuteNonQuery();
+
+             
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexao.Close();
+                conexao = null;
+                comando = null;
+            }
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+         
+        }
     }
 }

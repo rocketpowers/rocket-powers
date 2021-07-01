@@ -1,35 +1,36 @@
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\rocketpowers.exe.config
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\rocketpowers.exe
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\rocketpowers.pdb
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.csproj.AssemblyReference.cache
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.Properties.Resources.resources
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.view.Cadastro.resources
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.View.Form3.resources
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.Form1.resources
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.csproj.GenerateResource.cache
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.csproj.CoreCompileInputs.cache
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.exe
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.pdb
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\Google.Protobuf.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\K4os.Compression.LZ4.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\K4os.Compression.LZ4.Streams.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\K4os.Hash.xxHash.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\MySql.Data.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Buffers.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Memory.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\Zstandard.Net.dll
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\Google.Protobuf.pdb
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\Google.Protobuf.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\K4os.Compression.LZ4.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\K4os.Compression.LZ4.Streams.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\K4os.Hash.xxHash.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\MySql.Data.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Buffers.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Memory.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Numerics.Vectors.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\rocke\OneDrive\Área de Trabalho\rocketpowers\obj\Debug\rocketpowers.csproj.CopyComplete
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\rocketpowers.exe.config
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\rocketpowers.exe
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\rocketpowers.pdb
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\Google.Protobuf.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\MySql.Data.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Buffers.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Memory.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\Zstandard.Net.dll
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\Google.Protobuf.pdb
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\Google.Protobuf.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\MySql.Data.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Buffers.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Memory.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\rocke\source\repos\rocket-powers\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.csproj.AssemblyReference.cache
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.Properties.Resources.resources
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.view.Cadastro.resources
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.View.Form3.resources
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.Form1.resources
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.csproj.GenerateResource.cache
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.csproj.CoreCompileInputs.cache
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.csproj.CopyComplete
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.exe
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.pdb
+C:\Users\rocke\source\repos\rocket-powers\obj\Debug\rocketpowers.Form4.resources
