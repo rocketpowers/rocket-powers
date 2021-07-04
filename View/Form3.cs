@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
+
 
 
 namespace rocketpowers.View
@@ -217,8 +219,23 @@ namespace rocketpowers.View
 
         private void button1_Click(object sender, EventArgs e)
         {
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+          
 
-         
+        }
+
+        private void printDocument1_PrintPage_1(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+
+            Bitmap objBmp = new Bitmap(this.datagrid.Width, this.datagrid.Height);
+            datagrid.DrawToBitmap(objBmp, new Rectangle(0, 0, this.datagrid.Width, this.datagrid.Height));
+            e.Graphics.DrawImage(objBmp, -10, -20);
+            // e.Graphics.DrawString(txtname.Text, new Font("verdana", 20, FontStyle.Bold), Brushes.Black, new Point(300, 100));
+            
+
+
+
         }
     }
 }
