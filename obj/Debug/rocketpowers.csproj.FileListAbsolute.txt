@@ -67,3 +67,7 @@ C:\Users\rocke\Source\Repos\rocket-powers\bin\Debug\th\CrystalDecisions.Shared.r
 C:\Users\rocke\Source\Repos\rocket-powers\bin\Debug\tr\CrystalDecisions.Shared.resources.dll
 C:\Users\rocke\Source\Repos\rocket-powers\bin\Debug\zh-CHS\CrystalDecisions.Shared.resources.dll
 C:\Users\rocke\Source\Repos\rocket-powers\bin\Debug\zh-CHT\CrystalDecisions.Shared.resources.dll
+C:\Users\rocke\Source\Repos\rocket-powers\bin\Debug\rocketpowers.exe.manifest
+C:\Users\rocke\Source\Repos\rocket-powers\bin\Debug\rocketpowers.application
+C:\Users\rocke\Source\Repos\rocket-powers\obj\Debug\rocketpowers.exe.manifest
+C:\Users\rocke\Source\Repos\rocket-powers\obj\Debug\rocketpowers.application
